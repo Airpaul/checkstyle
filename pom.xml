@@ -520,7 +520,7 @@
         </executions>
       </plugin>
       
-      	  
+<!--
       <plugin>
        <groupId>org.codehaus.mojo</groupId>
        <artifactId>cobertura-maven-plugin</artifactId>
@@ -550,8 +550,8 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.TreeWalker</pattern><branchRate>90</branchRate><lineRate>83</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.Utils</pattern><branchRate>100</branchRate><lineRate>87</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.XMLLogger</pattern><branchRate>86</branchRate><lineRate>97</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck</pattern><branchRate>75</branchRate><lineRate>87</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.api.AbstractLoader</pattern><branchRate>75</branchRate><lineRate>88</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.api.AbstractViolationReporter</pattern><branchRate>100</branchRate><lineRate>90</lineRate></regex>
@@ -589,8 +589,8 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.api.TextBlock</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.api.TokenTypes</pattern><branchRate>62</branchRate><lineRate>72</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.api.Utils</pattern><branchRate>69</branchRate><lineRate>63</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.AbstractFormatCheck</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.AbstractOptionCheck</pattern><branchRate>100</branchRate><lineRate>80</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.AbstractTypeAwareCheck</pattern><branchRate>87</branchRate><lineRate>84</lineRate></regex>
@@ -614,8 +614,8 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.UncommentedMainCheck</pattern><branchRate>83</branchRate><lineRate>88</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.UniquePropertiesCheck</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.UpperEllCheck</pattern><branchRate>100</branchRate><lineRate>83</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationLocationCheck</pattern><branchRate>75</branchRate><lineRate>78</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationUseStyleCheck</pattern><branchRate>93</branchRate><lineRate>96</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.annotation.MissingDeprecatedCheck</pattern><branchRate>92</branchRate><lineRate>96</lineRate></regex>
@@ -623,8 +623,8 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.annotation.package-info</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.annotation.PackageAnnotationCheck</pattern><branchRate>50</branchRate><lineRate>77</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.annotation.SuppressWarningsCheck</pattern><branchRate>79</branchRate><lineRate>96</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck</pattern><branchRate>100</branchRate><lineRate>90</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.blocks.BlockOption</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.blocks.EmptyBlockCheck</pattern><branchRate>88</branchRate><lineRate>100</lineRate></regex>
@@ -635,8 +635,8 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.blocks.package-info</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck</pattern><branchRate>88</branchRate><lineRate>95</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyOption</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.coding.AbstractIllegalCheck</pattern><branchRate>64</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.coding.AbstractIllegalMethodCheck</pattern><branchRate>100</branchRate><lineRate>92</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.coding.AbstractNestedDepthCheck</pattern><branchRate>100</branchRate><lineRate>86</lineRate></regex>
@@ -685,8 +685,8 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.coding.SuperFinalizeCheck</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck</pattern><branchRate>91</branchRate><lineRate>96</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck</pattern><branchRate>90</branchRate><lineRate>97</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck</pattern><branchRate>67</branchRate><lineRate>81</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck</pattern><branchRate>80</branchRate><lineRate>95</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck</pattern><branchRate>95</branchRate><lineRate>97</lineRate></regex>
@@ -697,14 +697,14 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.design.package-info</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.design.ThrowsCountCheck</pattern><branchRate>75</branchRate><lineRate>83</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck</pattern><branchRate>95</branchRate><lineRate>95</lineRate></regex>
-          
+
 
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.header.AbstractHeaderCheck</pattern><branchRate>79</branchRate><lineRate>85</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.header.HeaderCheck</pattern><branchRate>18</branchRate><lineRate>45</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.header.package-info</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck</pattern><branchRate>87</branchRate><lineRate>93</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.imports.AccessResult</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck</pattern><branchRate>90</branchRate><lineRate>88</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck</pattern><branchRate>85</branchRate><lineRate>95</lineRate></regex>
@@ -719,8 +719,8 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.imports.PkgControl</pattern><branchRate>80</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck</pattern><branchRate>81</branchRate><lineRate>94</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck</pattern><branchRate>90</branchRate><lineRate>97</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.indentation.ArrayInitHandler</pattern><branchRate>83</branchRate><lineRate>97</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.indentation.BlockParentHandler</pattern><branchRate>86</branchRate><lineRate>98</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.indentation.CaseHandler</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
@@ -754,8 +754,8 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.indentation.SwitchHandler</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.indentation.TryHandler</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.indentation.WhileHandler</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.javadoc.AbstractJavadocCheck</pattern><branchRate>90</branchRate><lineRate>93</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheck</pattern><branchRate>88</branchRate><lineRate>88</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.javadoc.HtmlTag</pattern><branchRate>75</branchRate><lineRate>90</lineRate></regex>
@@ -777,8 +777,8 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck</pattern><branchRate>93</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.javadoc.TagParser</pattern><branchRate>92</branchRate><lineRate>98</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck</pattern><branchRate>100</branchRate><lineRate>91</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.metrics.AbstractClassCouplingCheck</pattern><branchRate>87</branchRate><lineRate>97</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.metrics.AbstractComplexityCheck</pattern><branchRate>83</branchRate><lineRate>92</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.metrics.BooleanExpressionComplexityCheck</pattern><branchRate>74</branchRate><lineRate>80</lineRate></regex>
@@ -788,13 +788,13 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.metrics.JavaNCSSCheck</pattern><branchRate>81</branchRate><lineRate>96</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.metrics.NPathComplexityCheck</pattern><branchRate>100</branchRate><lineRate>96</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.metrics.package-info</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck</pattern><branchRate>92</branchRate><lineRate>91</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.modifier.package-info</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck</pattern><branchRate>97</branchRate><lineRate>96</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck</pattern><branchRate>93</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.naming.AbstractAccessControlNameCheck</pattern><branchRate>95</branchRate><lineRate>80</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.naming.AbstractClassNameCheck</pattern><branchRate>100</branchRate><lineRate>90</lineRate></regex>
@@ -813,8 +813,8 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck</pattern><branchRate>75</branchRate><lineRate>80</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck</pattern><branchRate>81</branchRate><lineRate>87</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.regexp.CommentSuppressor</pattern><branchRate>75</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.regexp.DetectorOptions</pattern><branchRate>100</branchRate><lineRate>96</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.regexp.MatchSuppressor</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
@@ -825,7 +825,7 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck</pattern><branchRate>100</branchRate><lineRate>76</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheck</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.regexp.SinglelineDetector</pattern><branchRate>93</branchRate><lineRate>96</lineRate></regex>
-          
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.sizes.AnonInnerLengthCheck</pattern><branchRate>100</branchRate><lineRate>92</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.sizes.ExecutableStatementCountCheck</pattern><branchRate>81</branchRate><lineRate>95</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.sizes.FileLengthCheck</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
@@ -834,8 +834,8 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck</pattern><branchRate>100</branchRate><lineRate>95</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.sizes.OuterTypeNumberCheck</pattern><branchRate>75</branchRate><lineRate>94</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck</pattern><branchRate>100</branchRate><lineRate>93</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.whitespace.AbstractParenPadCheck</pattern><branchRate>88</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyForInitializerPadCheck</pattern><branchRate>91</branchRate><lineRate>93</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyForIteratorPadCheck</pattern><branchRate>100</branchRate><lineRate>92</lineRate></regex>
@@ -854,8 +854,8 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck</pattern><branchRate>90</branchRate><lineRate>90</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck</pattern><branchRate>96</branchRate><lineRate>98</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.checks.whitespace.WrapOption</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
-          
-          
+
+
           <regex><pattern>com.puppycrawl.tools.checkstyle.filters.CSVFilter</pattern><branchRate>100</branchRate><lineRate>93</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.filters.IntFilter</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.filters.IntMatchFilter</pattern><branchRate>100</branchRate><lineRate>90</lineRate></regex>
@@ -867,11 +867,11 @@
           <regex><pattern>com.puppycrawl.tools.checkstyle.filters.SuppressionsLoader</pattern><branchRate>68</branchRate><lineRate>77</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.filters.SuppressWarningsFilter</pattern><branchRate>100</branchRate><lineRate>100</lineRate></regex>
           <regex><pattern>com.puppycrawl.tools.checkstyle.filters.SuppressWithNearbyCommentFilter</pattern><branchRate>80</branchRate><lineRate>87</lineRate></regex>
-          
-          
+
+
          </regexes>
         </check>
-       </configuration> 
+       </configuration>
        <executions>
           <execution>
             <goals>
@@ -880,23 +880,23 @@
           </execution>
        </executions>
       </plugin>
-
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>cobertura-maven-plugin</artifactId>
-        <version>2.6</version>
-        <configuration>
-          <instrumentation>
-            <excludes>
-              <exclude>com/puppycrawl/tools/checkstyle/CheckStyleTask*.class</exclude>
-              <exclude>com/puppycrawl/tools/checkstyle/doclets/*.class</exclude>
-              <exclude>com/puppycrawl/tools/checkstyle/grammars/*.class</exclude>
-              <exclude>com/puppycrawl/tools/checkstyle/grammars/javadoc/*.class</exclude>
-              <exclude>com/puppycrawl/tools/checkstyle/gui/*.class</exclude>
-            </excludes>
-          </instrumentation>
-        </configuration>
-      </plugin>
+-->
+      <!--<plugin>-->
+        <!--<groupId>org.codehaus.mojo</groupId>-->
+        <!--<artifactId>cobertura-maven-plugin</artifactId>-->
+        <!--<version>2.6</version>-->
+        <!--<configuration>-->
+          <!--<instrumentation>-->
+            <!--<excludes>-->
+              <!--<exclude>com/puppycrawl/tools/checkstyle/CheckStyleTask*.class</exclude>-->
+              <!--<exclude>com/puppycrawl/tools/checkstyle/doclets/*.class</exclude>-->
+              <!--<exclude>com/puppycrawl/tools/checkstyle/grammars/*.class</exclude>-->
+              <!--<exclude>com/puppycrawl/tools/checkstyle/grammars/javadoc/*.class</exclude>-->
+              <!--<exclude>com/puppycrawl/tools/checkstyle/gui/*.class</exclude>-->
+            <!--</excludes>-->
+          <!--</instrumentation>-->
+        <!--</configuration>-->
+      <!--</plugin>-->
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -947,17 +947,17 @@
             <version>2.18.1</version>
           </plugin>
 
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-	    <version>2.6</version>
-            <configuration>
-              <formats>
-                <format>xml</format>
-                <format>html</format>
-              </formats>
-            </configuration>
-          </plugin>
+          <!--<plugin>-->
+            <!--<groupId>org.codehaus.mojo</groupId>-->
+            <!--<artifactId>cobertura-maven-plugin</artifactId>-->
+	    <!--<version>2.6</version>-->
+            <!--<configuration>-->
+              <!--<formats>-->
+                <!--<format>xml</format>-->
+                <!--<format>html</format>-->
+              <!--</formats>-->
+            <!--</configuration>-->
+          <!--</plugin>-->
 
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>

@@ -115,14 +115,24 @@ public class SummaryJavadocCheck extends AbstractJavadocCheck
     @Override
     public void visitJavadocToken(DetailNode ast)
     {
+        String javadocText = "";
         String firstSentence = getFirstSentence(ast);
-        final int endOfSentence = firstSentence.length() - 1;
-        if (firstSentence.length() < JAVA_DOC_LENGTH_LIMIT) {
+        if (firstSentence.indexOf("\n") == 0) {
+            firstSentence = firstSentence.substring(1);
+        }
+        if (firstSentence.contains("\n")) {
+            firstSentence = firstSentence.substring(0, firstSentence.indexOf("\n"));
+            // This regexp is used to convert multiline javdoc to single line without stars.
+            javadocText = firstSentence.replaceAll("\n[ ]+(\\*)|^[ ]+(\\*)", " ");
+            javadocText = CharMatcher.WHITESPACE.trimAndCollapseFrom(javadocText, ' ');
+        }
+        final int endOfSentence = javadocText.length() - 1;
+        if (javadocText.length() < JAVA_DOC_LENGTH_LIMIT) {
             log(ast.getLineNumber(), SUMMARY_FIRST_SENTENCE);
         }
         else {
-            firstSentence = firstSentence.substring(0, endOfSentence);
-            if (containsForbiddenFragment(firstSentence)) {
+            javadocText = javadocText.substring(0, endOfSentence);
+            if (containsForbiddenFragment(javadocText)) {
                 log(ast.getLineNumber(), SUMMARY_JAVADOC);
             }
         }
@@ -176,9 +186,6 @@ public class SummaryJavadocCheck extends AbstractJavadocCheck
      */
     private boolean containsForbiddenFragment(String firstSentence)
     {
-        // This regexp is used to convert multiline javdoc to single line without stars.
-        String javadocText = firstSentence.replaceAll("\n[ ]+(\\*)|^[ ]+(\\*)", " ");
-        javadocText = CharMatcher.WHITESPACE.trimAndCollapseFrom(javadocText, ' ');
-        return forbiddenSummaryFragments.matcher(javadocText).find();
+        return forbiddenSummaryFragments.matcher(firstSentence).find();
     }
 }
