@@ -21,7 +21,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.puppycrawl.tools</groupId>
-  <artifactId>checkstyle</artifactId>
+  <artifactId>checkstyle-mms</artifactId>
   <version>6.5-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>checkstyle</name>
@@ -55,13 +55,6 @@
     <url>https://github.com/checkstyle/checkstyle</url>
   </scm>
 
-  <distributionManagement>
-    <site>
-      <id>sourceforge-new-site</id>
-      <name>New Site</name>
-      <url>scp://shell.sourceforge.net/home/project-web/checkstyle/htdocs/new-site</url>
-    </site>
-  </distributionManagement>
 
   <developers>
     <developer>
@@ -1261,4 +1254,16 @@
 
 
   </profiles>
+  <distributionManagement>
+    <repository>
+      <id>meituan-nexus-releases</id>
+      <name>Meituan Nexus Repository</name>
+      <url>http://10.64.12.230:8081/nexus/content/repositories/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>meituan-nexus-snapshots</id>
+      <name>local private snapshots</name>
+      <url>http://nexus.sankuai.com:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>

@@ -66,6 +66,11 @@ public class SummaryJavadocCheck extends AbstractJavadocCheck
     public static final String SUMMARY_FIRST_SENTENCE = "summary.first.sentence";
 
     /**
+     * javadoc must longer than 5.
+     */
+    public static final Integer JAVA_DOC_LENGTH_LIMIT = 5;
+
+    /**
      * A key is pointing to the warning message text in "messages.properties"
      * file.
      */
@@ -112,7 +117,7 @@ public class SummaryJavadocCheck extends AbstractJavadocCheck
     {
         String firstSentence = getFirstSentence(ast);
         final int endOfSentence = firstSentence.length() - 1;
-        if (firstSentence.length() < 5) {
+        if (firstSentence.length() < JAVA_DOC_LENGTH_LIMIT) {
             log(ast.getLineNumber(), SUMMARY_FIRST_SENTENCE);
         }
         else {
