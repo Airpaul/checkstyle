@@ -117,6 +117,9 @@ public class SummaryJavadocCheck extends AbstractJavadocCheck
     {
         String javadocText = "";
         String firstSentence = getFirstSentence(ast);
+        if (firstSentence.indexOf("\r") == 0) {
+            firstSentence = firstSentence.substring(1);
+        }
         if (firstSentence.indexOf("\n") == 0) {
             firstSentence = firstSentence.substring(1);
         }
@@ -127,7 +130,7 @@ public class SummaryJavadocCheck extends AbstractJavadocCheck
             javadocText = CharMatcher.WHITESPACE.trimAndCollapseFrom(javadocText, ' ');
         }
         final int endOfSentence = javadocText.length() - 1;
-        if (javadocText.length() < JAVA_DOC_LENGTH_LIMIT) {
+        if (javadocText.length() <= JAVA_DOC_LENGTH_LIMIT) {
             log(ast.getLineNumber(), SUMMARY_FIRST_SENTENCE);
         }
         else {
